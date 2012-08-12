@@ -45,6 +45,7 @@ test:
   pool: 5
   username: websitecms
   password:
+  min_messages: WARNING
 
 production:
   adapter: postgresql
