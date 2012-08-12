@@ -3,7 +3,15 @@ ActiveAdmin::Dashboards.build do
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
-  
+  section "2011 Conference" do
+    conference = Conference.first
+    table_for conference.talks do |talk|
+      column :title
+      column "Speaker" do |talk|
+        talk.person.name
+      end
+    end
+  end  
   # == Simple Dashboard Section
   # Here is an example of a simple dashboard section
   #
