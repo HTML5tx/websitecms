@@ -25,6 +25,7 @@ gem 'jquery-rails'
 # To use debugger
 group :development, :test do
   gem 'debugger'
+  gem 'sqlite3' #for local development
 end
 
 group :test do
