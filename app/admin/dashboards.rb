@@ -4,7 +4,7 @@ ActiveAdmin::Dashboards.build do
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
   section "2011 Conference" do
-    conference = Conference.first
+    conference = Conference.where("name like '%2011%'").first
     table_for conference.talks do |talk|
       column :title
       column "Speaker" do |talk|
