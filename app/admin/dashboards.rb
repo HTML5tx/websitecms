@@ -12,7 +12,17 @@ ActiveAdmin::Dashboards.build do
       end
     end
   end  
-  # == Simple Dashboard Section
+  section "2013 Conference" do
+    conference = Conference.where("name like '%2013%'").first
+    table_for conference.talks do |talk|
+      column :title
+      column "Speaker" do |talk|
+        talk.person.name
+      end
+    end
+  end  
+   # == Simple Dashboard Section
+  #
   # Here is an example of a simple dashboard section
   #
   #   section "Recent Posts" do
