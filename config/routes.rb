@@ -4,6 +4,7 @@ Websitecms::Application.routes.draw do
   get "pages/sponsors"
   get "pages/venue"
   get "pages/videos"
+  get "pages/blog"
 
   ActiveAdmin.routes(self)
 

@@ -1,0 +1,35 @@
+/* humanstxt.org */
+
+/* TEAM */
+
+	Site Design: Drifting Creatives
+	Site: www.driftingcreatives.com
+	Twitter: @driftcreate
+	Location: College Station, TX
+
+ 	Front-End Develpoment: Matt Carver
+ 	Site: http://matthewcarver.com
+ 	Twitter: @matthew_carver
+ 	Location: New York, NY
+
+  Front-End Development: Tim Thomas
+  Site:
+  Twitter:
+  Location: Austin, TX
+
+  Front- and Back-End Development: Brandon Satrom
+  Site: http://www.userinexperience.com
+  Twitter: @brandonsatrom
+  Location: Austin, TX
+
+ 	Back-End Develpoment: Nola Stowe
+ 	Site:
+ 	Twitter:
+ 	Location: Austin, TX
+
+/* THANKS */
+ 	Names (& URL): 
+
+/* SITE */
+ 	Standards: HTML5, CSS3
+ 	Components: html5shiv, jQuery
