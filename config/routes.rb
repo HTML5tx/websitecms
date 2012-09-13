@@ -1,10 +1,14 @@
 Websitecms::Application.routes.draw do
-  get "pages/index"
+  get "pages/index" #about
+  # get "pages/speakers"
+  # get "pages/schedule"
+  get "pages/blog"
+  get "pages/videos"
+  get "pages/contact"
+
   get "pages/talk"
   get "pages/sponsors"
   get "pages/venue"
-  get "pages/videos"
-  get "pages/blog"
 
   ActiveAdmin.routes(self)
 

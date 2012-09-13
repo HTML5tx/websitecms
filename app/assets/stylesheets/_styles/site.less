@@ -444,6 +444,15 @@ section{
 			width: 23%;
 		}
 
+		.left-half {
+			float: left;
+			width: 45%;
+		}
+		.right-half {
+			float: right;
+			width: 45%;
+		}
+
 		// headers
 		div > h2,
 		aside > h2 {
@@ -491,6 +500,25 @@ footer{
 	}
 }
 
+.footered {
+	position: relative;
+	padding-bottom: 18px;
+
+	&:after {
+		content: " ";
+		background: url(_img/cog-footer.png) center center no-repeat;
+		background-size: 17px 17px;
+
+		display: block;
+		height: 34px;
+		width: 34px;
+		position: absolute;
+		margin-left: -17px;
+		bottom: -18px;
+		left: 50%;
+	}
+}
+
 
 // 7 - forms
 
@@ -504,4 +532,93 @@ input[type="search"] {
 
 	padding: 8px 0;
 	width: 100%;
+}
+
+form {
+	p, button {
+		background-color: #cacaca;
+		border: solid 1px #b6b6b6;
+		color: #191919;
+	}
+
+	button, label {
+		font-size: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	p {
+		text-align: left !important;
+
+		overflow: hidden;
+		padding: 0 16px;
+
+		label {
+			line-height: 40px;
+
+			display: block;
+			float: left;
+			width: 50px;
+
+			&.textarea {
+				display: block;
+				float: none;
+				width: 100%;
+			}
+		}
+
+		input, textarea {
+			background: transparent;
+			border: 0;
+			font-size: 12px;
+		}
+
+		input[type="text"], input[type="email"] {
+			float: left;
+			height: 36px;
+			width: 250px;
+		}
+
+		textarea {
+			height: 100px;
+			padding: 0;
+			max-height: 200px;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	button[type="submit"] {
+		cursor: pointer;
+
+		display: block;
+		height: 30px;
+		position: relative;
+		margin: 0 auto;
+		width: 180px;
+
+		&:before, &:after {
+			border: solid 1px #b8b8b8;
+			border-top: 0;
+			border-bottom: 0;
+			content: "★";
+			line-height: 28px;
+			display: block;
+			height: 28px;
+			width: 28px;
+			position: absolute;
+		}
+		&:before {
+			border-left: 0;
+			box-shadow: 1px 0 0 #e9e8e9;
+			left: 0;
+			top: 0;
+		}
+		&:after {
+			border-right: 0;
+			box-shadow: -1px 0 0 #e9e8e9;
+			right: 0;
+			top: 0;
+		}
+	}
 }
