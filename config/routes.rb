@@ -1,5 +1,6 @@
 Websitecms::Application.routes.draw do
-  get "pages/index" #about
+  get "pages/index"
+  get "pages/about"
   # get "pages/speakers"
   # get "pages/schedule"
   get "pages/blog"
