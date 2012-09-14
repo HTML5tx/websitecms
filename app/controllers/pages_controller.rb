@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def index
+    @on_home_page = true
   end
 
   def talk

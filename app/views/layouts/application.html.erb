@@ -60,12 +60,17 @@
         </div>
     </nav>
 
-    <div class="bad-ass-war-eagle"></div>
-    <!-- .bad-ass-war-eagle -->
-    <div class="cog"></div>
-    <!-- .cog -->
+    <% if @on_home_page %>
+      <div class="bad-ass-war-eagle"></div>
+      <!-- .bad-ass-war-eagle -->
+      <div class="cog"></div>
+      <!-- .cog -->
+    <% else %>
+      <div class="slightly-less-bad-ass-war-eagle"></div>
+      <div class="slightly-less-cog"></div>
+    <% end %>
 
-    <div role="main" id="wrapper">
+    <div role="main" class="<%= @on_home_page ? "" : "inner" %>" id="wrapper">
 
       <%= yield %>
         
