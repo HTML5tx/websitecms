@@ -1,12 +1,13 @@
 Websitecms::Application.routes.draw do
+  resources :contacts
+
   get "pages/index"
   get "pages/about"
   # get "pages/speakers"
   # get "pages/schedule"
   get "pages/blog"
   get "pages/videos"
-  get "pages/contact"
-
+  
   get "pages/talk"
   get "pages/sponsors"
   get "pages/venue"
