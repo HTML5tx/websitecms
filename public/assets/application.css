@@ -489,6 +489,18 @@ nav.footer a:hover {
   -webkit-animation: rotate 15s infinite;
   -webkit-animation-timing-function: linear;
 }
+.slightly-less-bad-ass-war-eagle {
+  background: url(_img/m/slightly-less-bad-ass-war-eagle.png) top center no-repeat;
+  width: 100%;
+  height: 300px;
+  z-index: 9;
+  position: absolute;
+  top: 54px;
+  z-index: 99;
+}
+div[role="main"].inner {
+  margin-top: 60px;
+}
 section.masthead {
   position: relative;
   top: 90px;
@@ -643,6 +655,7 @@ section.sponsors .sponsor {
   float: left;
 }
 section.inner {
+  color: #fff;
   line-height: 24px;
 }
 section.inner .left-em {
@@ -652,6 +665,16 @@ section.inner .left-em {
 section.inner .right-deem {
   float: right;
   width: 23%;
+}
+section.inner .half {
+  box-sizing: border-box;
+  float: left;
+  padding-right: 4%;
+  width: 52%;
+}
+section.inner .half:last-child {
+  padding-right: 0;
+  width: 48%;
 }
 section.inner div > h2,
 section.inner aside > h2 {
@@ -685,6 +708,22 @@ footer[role="main"] .bar {
   float: left;
   background: #2c2c2c;
 }
+.footered {
+  position: relative;
+  padding-bottom: 18px;
+}
+.footered:after {
+  content: " ";
+  background: url(_img/cog-footer.png) center center no-repeat;
+  background-size: 17px 17px;
+  display: block;
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  margin-left: -17px;
+  bottom: -18px;
+  left: 50%;
+}
 input[type="search"] {
   background: #cacaca;
   border: 0;
@@ -693,6 +732,85 @@ input[type="search"] {
   font-size: 14px;
   padding: 8px 0;
   width: 100%;
+}
+form p,
+form button {
+  background-color: #cacaca;
+  border: solid 1px #b6b6b6;
+  color: #191919;
+}
+form button,
+form label {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+form p {
+  text-align: left !important;
+  overflow: hidden;
+  padding: 0 16px;
+}
+form p label {
+  line-height: 40px;
+  display: block;
+  float: left;
+  width: 50px;
+}
+form p label.textarea {
+  display: block;
+  float: none;
+  width: 100%;
+}
+form p input,
+form p textarea {
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+}
+form p input[type="text"],
+form p input[type="email"] {
+  float: left;
+  height: 36px;
+  width: 250px;
+}
+form p textarea {
+  height: 100px;
+  padding: 0;
+  max-height: 200px;
+  width: 100%;
+  max-width: 100%;
+}
+form button[type="submit"] {
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  width: 180px;
+}
+form button[type="submit"]:before,
+form button[type="submit"]:after {
+  border: solid 1px #b8b8b8;
+  border-top: 0;
+  border-bottom: 0;
+  content: "★";
+  line-height: 28px;
+  display: block;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+}
+form button[type="submit"]:before {
+  border-left: 0;
+  box-shadow: 1px 0 0 #e9e8e9;
+  left: 0;
+  top: 0;
+}
+form button[type="submit"]:after {
+  border-right: 0;
+  box-shadow: -1px 0 0 #e9e8e9;
+  right: 0;
+  top: 0;
 }
 @media only screen and (min-width: 480px) {
   #container {
@@ -770,6 +888,10 @@ input[type="search"] {
   .bad-ass-war-eagle {
     top: 107px;
     background: url(_img/s/bad-ass-war-eagle.png) top center no-repeat;
+  }
+  .slightly-less-bad-ass-war-eagle {
+    top: 153px;
+    background: url(_img/m/slightly-less-bad-ass-war-eagle.png) top center no-repeat;
   }
   .cog {
     top: 240px;
@@ -879,6 +1001,15 @@ input[type="search"] {
   .cog {
     top: 260px;
   }
+  .slightly-less-bad-ass-war-eagle {
+    background: url(_img/m/slightly-less-bad-ass-war-eagle.png) top center no-repeat;
+    background-size: 100% auto;
+    height: 250px;
+    top: 153px;
+    width: 210px;
+    left: 50%;
+    margin-left: -105px;
+  }
   nav[role="main"] .silver-nav .left-set div,
   nav[role="main"] .silver-nav .right-set div {
     top: 15px;
@@ -950,6 +1081,11 @@ input[type="search"] {
     height: 415px;
     top: 123px;
   }
+  .slightly-less-bad-ass-war-eagle {
+    width: 276px;
+    margin-left: -128px;
+    top: 215px;
+  }
   nav[role="main"] {
     height: 137px;
     top: 345px;
@@ -974,6 +1110,9 @@ input[type="search"] {
   }
   div[role="main"] {
     margin-top: 110px;
+  }
+  div[role="main"].inner {
+    margin-top: 80px;
   }
   nav.footer a {
     width: 12.5%;
