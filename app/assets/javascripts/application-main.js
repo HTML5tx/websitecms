@@ -1,7 +1,6 @@
-(function($){
+$(function(){
 
-// RESPONSIVE IMAGES
-
+	// RESPONSIVE IMAGES
 	var viewportWidth = $(window).width();
 	var small = 600;
 	var medium = 992;
@@ -23,14 +22,7 @@
 			$(this).attr('src', mediumImg);
 		});
 
-	}else{
- 
 	}
 
 	console.log(viewportWidth);
-
-
-// END RESPONSIVE IMAGES
-
-
-})( jQuery.noConflict() ); // Pass in jQuery so we can safely use the $ alias within this block
+});
