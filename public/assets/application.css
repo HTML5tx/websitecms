@@ -613,7 +613,7 @@ section.speakers .speaker-wrap .big-cog {
   display: block;
   margin-left: -25px;
   position: absolute;
-  z-index: 9;
+  z-index: -1;
   top: 60px;
   left: 50%;
   background: url(_img/big-cog.png) no-repeat top left;
