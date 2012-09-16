@@ -14,7 +14,7 @@ $(function(){
 			$(this).attr('src', mediumImg);
 		});
 
-	}if(viewportWidth > medium && viewportWidth < large){
+	}if(viewportWidth > medium){
 		var img = $('img[data-l-src]');
 
 		img.each(function(){
