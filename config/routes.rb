@@ -12,9 +12,6 @@ Websitecms::Application.routes.draw do
   get "pages/sponsors"
   get "pages/venue"
 
-  ActiveAdmin.routes(self)
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
