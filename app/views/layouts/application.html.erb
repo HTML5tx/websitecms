@@ -1,11 +1,15 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
+   <meta charset="utf-8">
    <title>HTML5.tx 2013</title>
    <meta name="viewport" content="width=device-width">
+   <meta name="keywords" content="html5, conference, texas, javascript, css, html">
+   <meta name="description" content="Website for the HTML5.tx Conference, held annualy in Austin, TX">
    <%= stylesheet_link_tag "application", :media => "all" %>
+   <link type="text/plain" rel="author" href="/humans.txt" />
    <script src="/js/html5shiv.js"></script>
 </head>
 
@@ -46,11 +50,11 @@
       <nav>
          <ul>
             <li><a href="http://html5tx.thundertix.com/">Register</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/about">About</a></li>
             <!--<li><a href="#">Speakers</a></li>-->
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/pages/blog">News</a></li>
+            <li><a href="/pages/contact">Contact</a></li>
             <li><a href="http://2011.html5tx.com/videos">Videos</a></li>
             <li><a href="mailto:sponsorship@html5tx.com">Sponsorship</a></li>
          </ul>
@@ -77,20 +81,3 @@
 </body>
 
 </html>
-
-<!--  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <meta name="keywords" content="html5, conference, texas, javascript, css, html">
-  <meta name="description" content="Website for the HTML5.tx Conference, held annualy in Austin, TX">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
-
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/h/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/m/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" href="/images/l/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/images/l/apple-touch-icon.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link type="text/plain" rel="author" href="/humans.txt" />
-</head>-->
