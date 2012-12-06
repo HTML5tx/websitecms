@@ -14,4 +14,7 @@ class PagesController < ApplicationController
 
   def videos
   end
+
+  def contact
+  end
 end

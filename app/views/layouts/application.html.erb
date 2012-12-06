@@ -1,15 +1,84 @@
-<!DOCTYPE html>
-<!--[if IEMobile 7]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 7]><html class="no-js ie6" lang="en"><![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <title>HTML5.tx - HTML5 is the Future!</title>
+<!doctype html>
 
-  <!-- meta data -->
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<html>
+
+<head>
+   <title>HTML5.tx 2013</title>
+   <meta name="viewport" content="width=device-width">
+   <%= stylesheet_link_tag "application", :media => "all" %>
+   <script src="/js/html5shiv.js"></script>
+</head>
+
+<body class="<%= @on_home_page && "home" %>">
+   <header class="group" role="banner">
+      <h1>HTML5.tx 2013<span class="cog cog-m"></span></h1>
+      <div class="eagle"></div>
+      <a class="btn-join" href="#">Join</a>
+      <nav class="l-navigation" role="navigation">
+         <ul class="left">
+            <li class="first"><a href="/">H<small>o</small>me</a></li>
+            <li><a href="/pages/about">Ab<small>ou</small>t</a></li>
+            <li class="last"><a href="/pages/blog">N<small>e</small>ws</a></li>
+         </ul>
+         <ul class="right">
+            <li class="first"><a href="/pages/contact">C<small>o</small>nt<small>a</small>ct</a></li>
+            <li><a href="http://2011.html5tx.com/videos">V<small>i</small>d<small>eo</small>s</a></li>
+            <li class="last"><a href="http://2011.html5tx.com/">2011</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div class="group" role="main">
+      <%= yield %>
+   </div>
+   <!--<div class="group" role="main">
+      <section class="column social">
+         <a class="social-self" href="#">HTML5.tx 2013</a>
+      </section>
+      <section class="column social last">
+         <a class="social-blog" href="#">Read the Blog</a>
+         <span class="social-media">
+            <a class="twitter" href="#">Twitter</a>
+            <a class="facebook" href="#">Facebook</a>
+         </span>
+      </section>
+   </div>-->
+   <footer class="group">
+      <nav>
+         <ul>
+            <li><a href="http://html5tx.thundertix.com/">Register</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!--<li><a href="#">Speakers</a></li>-->
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="http://2011.html5tx.com/videos">Videos</a></li>
+            <li><a href="mailto:sponsorship@html5tx.com">Sponsorship</a></li>
+         </ul>
+      </nav>
+      <ul>
+         <li><span class="text">Copyright 2012 HTML5.tx</span></li>
+         <li><hr /></li>
+         <li><a href="http://driftingcreatives.com/">Design: Drifting Creatives</a></li>
+      </ul>
+   </footer>
+   
+   <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2061518-5']);
+      _gaq.push(['_setDomainName', 'html5tx.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+   </script>
+</body>
+
+</html>
+
+<!--  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta name="keywords" content="html5, conference, texas, javascript, css, html">
   <meta name="description" content="Website for the HTML5.tx Conference, held annualy in Austin, TX">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
@@ -18,112 +87,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <!-- icons -->
-  <!-- For iPhone 4 -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/h/apple-touch-icon.png">
-  <!-- For iPad 1-->
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/m/apple-touch-icon.png">
-  <!-- For iPhone 3G, iPod Touch and Android -->
   <link rel="apple-touch-icon-precomposed" href="/images/l/apple-touch-icon-precomposed.png">
-  <!-- For Nokia -->
   <link rel="shortcut icon" href="/images/l/apple-touch-icon.png">
-  <!-- For everything else -->
   <link rel="shortcut icon" href="/favicon.ico">
-
-  <!-- site credits -->
   <link type="text/plain" rel="author" href="/humans.txt" />
-</head>
-<body>
-  <div id="container">
-    <header role="main">
-        <h1><a href="http://html5tx.thundertix.com" target="_new">HTML 5 IS THE FUTURE</a></h1>
-    </header>
-
-    <nav role="main">
-        <div class="silver-nav">
-            <div class="left-set">
-                <div class="hide-on-phones">
-                    <a href="/" class="inactive">home</a>
-                    <a href="/pages/about">abt</a>
-                    <a href="/pages/blog">nws</a>
-                    <!--<a href="#">spkrs</a>
-                    <a href="#">schdl</a>-->
-                </div>
-            </div>
-            <div class="right-set">
-                <div class="hide-on-phones">
-                    <a href="/contacts/new">contct</a>
-                    <a href="http://2011.html5tx.com/videos" target="_new">vds</a>
-                    <a href="http://2011.html5tx.com">2011</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <% if @on_home_page %>
-      <div class="bad-ass-war-eagle"></div>
-      <!-- .bad-ass-war-eagle -->
-      <div class="cog"></div>
-      <!-- .cog -->
-    <% else %>
-      <div class="slightly-less-bad-ass-war-eagle"></div>
-      <div class="slightly-less-cog"></div>
-    <% end %>
-
-    <div role="main" class="<%= @on_home_page ? "" : "inner" %>" id="wrapper">
-
-      <%= yield %>
-        
-      <!-- social -->
-      <section class="social clearfix">
-          <div class="lower-logo"></div>
-          <a class="blog" href="/pages/blog">Read The Blog</a>
-          <div class="lower-cogs"> 
-              <a target="_blank" class="twitter" href="http://twitter.com/html5tx">twitter</a>
-              <a target="_blank" class="facebook" href="http://www.facebook.com/pages/HTML5tx/240781395942312">facebook</a>
-          </div>
-          <!-- .lower-cogs -->
-      </section>
-      <!-- .social -->
-    </div>
-    <!-- #wrapper -->
-
-    <footer role="main">
-    <nav class="footer">
-        <!--<a href="#" class="inactive">Register</a>-->
-        <a href="/pages/about">About</a>
-        <!--<a href="/pages/speakers">Speakers</a>
-        <a href="/pages/schedule">Schedule</a>-->
-        <a href="/pages/blog">News</a>
-        <a href="http://2011.html5tx.com/videos" target="_new">'11 Vids</a>
-        <a href="http://www.contactme.com/4e072425829ac6000101978e" target="_new">Contact</a>
-        <a href="mailto:sponsorships@html5tx.com">Sponsorship</a>
-         <a href="https://plus.google.com/114172344217341072606" rel="publisher">Find us on Google+</a>
-    </nav>
-    <div class="lower-block">
-        <span class="copyright">COPYRIGHT 2011-2012 HTML5.TX</span>
-    </div>
-  </footer>
-  </div>
-  <!-- #container -->
-
-  <script>
-  // iOS scale bug fix
-  MBP.scaleFix();
-
-  </script>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-2061518-5']);
-    _gaq.push(['_setDomainName', 'html5tx.com']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</body>
-</html>
+</head>-->

@@ -1,0 +1,138 @@
+* {
+   border: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #000;
+   color: #fff;
+   font-family: Futura, sans-serif;
+}
+
+.group {
+   margin: 0 auto 30px;
+   width: 980px;
+}
+
+.group:before,
+.group:after {
+   content: "";
+   display: table;
+} 
+.group:after {
+   clear: both;
+}
+
+/* Headings */
+h2, h3 {
+   text-transform: uppercase;
+}
+
+h2, h3, p {
+   font-size: 15px;
+   line-height: 24.27px;
+   margin-bottom: 9.27px;
+}
+
+/* Links */
+a { color: #fff; }
+
+/* Forms */
+form {
+   p {
+      background-color: #cacaca;
+      overflow: hidden;
+
+      label {
+         color: #000;
+         font-size: 12px;
+         font-weight: 700;
+         line-height: 30px;
+         text-transform: uppercase;
+
+         display: block;
+         float: left;
+         padding-left: 8px;
+         height: 30px;
+         width: 60px;
+
+         &.textarea {
+            float: none;
+            width: 600px;
+         }
+      }
+
+      input, textarea {
+         background: transparent;
+      }
+
+      input {
+         display: block;
+         float: left;
+         height: 30px;
+         width: 350px;
+      }
+      
+      textarea {
+         display: block;
+         height: 100px;
+         min-height: 100px;
+         max-height: 200px;
+         max-width: 96%;
+         margin: 0 2% 8px;
+         width: 96%;
+      }
+   }
+}
+
+/* Animations */
+@-webkit-keyframes rotate {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   50% {
+      -webkit-transform: rotate(180deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+@-moz-keyframes rotate {
+   0% {
+       -moz-transform: rotate(0deg);
+   }
+   50% {
+     -moz-transform: rotate(180deg);
+   }
+   100% {
+     -moz-transform: rotate(360deg);
+   }
+}
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes backgroundmove {
+   0% { background-position: -20px -20px; }
+   25% { background-position: 50px 50px; }
+   50% { background-position: 5px 5px; }
+   75% { background-position: -10px -10px; }
+   100% { background-position: -20px -20px; }
+}
+@keyframes backgroundmove {
+   0% { background-position: -20px -20px; }
+   25% { background-position: 50px 50px; }
+   50% { background-position: 5px 5px; }
+   75% { background-position: -10px -10px; }
+   100% { background-position: -20px -20px; }
+}

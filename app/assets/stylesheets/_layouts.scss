@@ -1,0 +1,51 @@
+/* Headings and Navigation */
+
+/* More */
+
+.l-featured {
+   list-style-type: none;
+   overflow: hidden;
+}
+   .l-featured li {
+      display: block;
+      float: left;
+      margin-right: 4%;
+      position: relative;
+      width: 22%;
+   }
+      .l-featured li.last {
+         margin-right: 0;
+      }
+
+   .l-featured .speaker {
+      display: block;
+      font: 0/0 a;
+      height: 272px;
+   }
+      .l-featured .cog {
+         position: absolute;
+         bottom: -30px;
+         left: 50%;
+         margin-left: -74px;
+         z-index: -10;
+
+         -webkit-animation-play-state:paused;
+         animation-play-state:paused;
+      }
+         .l-featured li:hover .cog {
+            -webkit-animation: rotate 15s infinite;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-play-state:running;
+            animation: rotate 15s infinite;
+            animation-timing-function: linear;
+            animation-play-state:running;
+         }
+
+   .l-featured .sponsor {
+      line-height: 117px;
+      text-align: center;
+   }
+
+   .l-featured.cogs {
+      padding-bottom: 31px;
+   }

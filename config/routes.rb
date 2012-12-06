@@ -6,6 +6,7 @@ Websitecms::Application.routes.draw do
   # get "pages/speakers"
   # get "pages/schedule"
   get "pages/blog"
+  get "pages/contact"
   get "pages/videos"
   
   get "pages/talk"
