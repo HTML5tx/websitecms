@@ -1,10 +1,14 @@
 @font-face {
    font-family: Futura;
-   src: url('../fonts/FuturaStd-Medium.otf');
+   src: url('../fonts/FuturaStd-Medium.eot?') format('eot'),
+      url('../fonts/FuturaStd-Medium.woff') format('woff'),
+      url('../fonts/FuturaStd-Medium.ttf') format('truetype');
    font-weight: 400;
 }
 @font-face {
    font-family: Futura;
-   src: url('../fonts/FuturaStd-Bold.otf');
+   src: url('../fonts/FuturaStd-Bold.eot?') format('eot'),
+      url('../fonts/FuturaStd-Bold.woff') format('woff'),
+      url('../fonts/FuturaStd-Bold.ttf') format('truetype');
    font-weight: 700;
 }
