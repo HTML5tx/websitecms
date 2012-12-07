@@ -3,7 +3,7 @@ Websitecms::Application.routes.draw do
 
   get "pages/index"
   get "pages/about"
-  # get "pages/speakers"
+  get "pages/speakers"
   # get "pages/schedule"
   get "pages/blog"
   get "pages/contact"

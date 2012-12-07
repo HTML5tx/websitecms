@@ -49,3 +49,64 @@
    .l-featured.cogs {
       padding-bottom: 31px;
    }
+
+.l-speakers {
+   list-style-type: none;
+
+   li {
+      display: inline-block;
+      padding: 0 0 70px;
+      vertical-align: top;
+      width: 49%;
+
+      &.featured {
+         width: 100%;
+
+         article { width: 760px; }
+         p { font-size: 16px; }
+      }
+   }
+}
+
+.l-speakers figure {
+   border: 3px solid #191919;
+   float: left;
+   height: 266px;
+   position: relative;
+}
+
+.l-speakers figcaption {
+   background: #191919;
+   padding: 10px 5px;
+   width: 190px;
+   position: absolute;
+   bottom: -40px;
+   right: -3px;
+}
+
+.l-speakers .name, .l-speakers .company {
+   color: #fff;
+   display: block;
+   font-size: 12px;
+   line-height: 20px;
+   text-align: right;
+}
+.l-speakers .name {
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.l-speakers article {
+   background: #131313;
+   color: #fff;
+   
+   float: left;
+   padding: 20px 20px 20px 40px;;
+   position: relative;
+   left: -20px;
+   top: 20px;
+   width: 260px;
+   z-index: -10;
+
+   p { font-size: 14px; }
+}

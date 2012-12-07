@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def sponsors
   end
 
+  def speakers
+  end
+
   def venue
   end
 
