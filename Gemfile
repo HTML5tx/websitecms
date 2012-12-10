@@ -12,8 +12,8 @@ gem 'rails', '3.2.7'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'less-rails'
-  gem 'coffee-rails'
+  #gem 'less-rails'
+  #gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
