@@ -129,22 +129,19 @@
 
 .sponsor {
    background: #5a3805;
+   background-position: center center;
+   background-repeat: no-repeat;
    color: #fff;
    text-decoration: none;
    display: block;
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
 }
-   .sponsor-kendoui {
-      background: #5a3805 url('../images/sponsors/kendoui.png') center center no-repeat;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-   }
-   .sponsor-thundertix {
-      background: #5a3805 url('../images/sponsors/thundertix.png') center center no-repeat;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-   }
+   .sponsor-kendoui { background-image: url('../images/sponsors/kendoui.png'); }
+   .sponsor-thundertix { background-image: url('../images/sponsors/thundertix.png'); }
+   .sponsor-four-kitchens { background-image: url('../images/sponsors/four-kitchens.png') }
+   .sponsor-capital-factory { background-image: url('../images/sponsors/capital-factory.png') }
 
 .social {}
    .social a { font: 0/0 a; }
