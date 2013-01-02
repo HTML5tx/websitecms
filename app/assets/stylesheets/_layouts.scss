@@ -80,6 +80,7 @@
    float: left;
    height: 266px;
    position: relative;
+   z-index: 10;
 }
 
 .l-speakers figcaption {
@@ -113,7 +114,24 @@
    left: -20px;
    top: 20px;
    width: 260px;
-   z-index: -10;
 
    p { font-size: 14px; }
+}
+
+.l-speakers.sponsors {
+   figure {
+      background-color: #5a3805;
+      height: 123px;
+   }
+
+   img {
+      height: 117px;
+      width: 216px;
+   }
+
+   article { width: 258px; }
+
+   li.featured {
+      article { width: 758px; }
+   }
 }
