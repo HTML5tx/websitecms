@@ -89,6 +89,36 @@ form {
    }
 }
 
+/* Tables */
+table {
+   border-collapse: collapse;
+   margin-bottom: 30px;
+   width: 100%;
+   th, td {
+      border-bottom: 2px solid #000;
+      border-right: 2px solid #000;
+      line-height: 1.618;
+      text-align: center; }
+   th, .em {
+      background: #5a3805 !important;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 10px 0; }
+   thead th, tfoot th {
+      font-size: 14px;
+      padding: 10px; }
+   td {
+      font-size: 14px;
+      padding: 10px; }
+   tr:nth-child(even) td {
+      background: #191919;
+   }
+   a {
+      color: #880202;
+      &:hover { color: #f00; }
+   }
+}
+
 /* Animations */
 @-webkit-keyframes rotate {
    0% {

@@ -20,4 +20,7 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def schedule
+  end
 end
