@@ -23,4 +23,8 @@ class PagesController < ApplicationController
 
   def schedule
   end
+
+  def sessions
+    redirect_to "http://html5tx2013.sched.org/"
+  end
 end

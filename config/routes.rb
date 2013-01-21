@@ -13,6 +13,8 @@ Websitecms::Application.routes.draw do
   get "pages/sponsors"
   get "pages/venue"
 
+  match "sessions" => "pages#sessions"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
