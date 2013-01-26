@@ -106,16 +106,19 @@ table {
       text-align: center; }
    th, .em {
       background: #5a3805 !important;
-      font-size: 12px;
-      font-weight: bold;
       padding: 10px 0; }
+   th {
+      font-size: 12px;
+      font-weight: bold; }
+   .em {
+      font-size: 14px; }
    thead th, tfoot th {
       font-size: 14px;
       padding: 10px; }
    td {
       font-size: 14px;
       padding: 10px; }
-   tr:nth-child(even) td {
+   tr:nth-child(odd) td {
       background: #191919;
    }
    td a {
